@@ -1,0 +1,6 @@
+@InallarEticaretWebService_HostAddress = http://localhost:5239
+
+GET {{InallarEticaretWebService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

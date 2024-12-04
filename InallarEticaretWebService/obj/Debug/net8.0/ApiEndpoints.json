@@ -1,0 +1,719 @@
+[
+  {
+    "ContainingType": "AddressController",
+    "Method": "AddOrUpdateAddress",
+    "RelativePath": "api/Address",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UserAddress",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AddressController",
+    "Method": "AddOrUpdateAddress",
+    "RelativePath": "api/Address/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "UserAddress",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AddressController",
+    "Method": "GetAddressesByEmail",
+    "RelativePath": "api/Address/GetAddressesByEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AddressController",
+    "Method": "IlcelerBySehir",
+    "RelativePath": "api/Address/IlcelerBySehir",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sehir",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AddressController",
+    "Method": "RemoveAddress",
+    "RelativePath": "api/Address/remove/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AddressController",
+    "Method": "TumSehirler",
+    "RelativePath": "api/Address/TumSehirler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BannerController",
+    "Method": "AddBanners",
+    "RelativePath": "api/Banner",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "banners",
+        "Type": "System.Collections.Generic.List\u00601[[BannerData, InallarEticaretWebService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BannerController",
+    "Method": "GetBanners",
+    "RelativePath": "api/Banner",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BannerController",
+    "Method": "DeleteBanner",
+    "RelativePath": "api/Banner/{filename}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filename",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CartController",
+    "Method": "AddToCart",
+    "RelativePath": "api/Cart/addToCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AddToCartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CartController",
+    "Method": "GetCartItems",
+    "RelativePath": "api/Cart/GetCartItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[InallarEticaretWebService.Models.SepettekiUrun, InallarEticaretWebService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CartController",
+    "Method": "RemoveCartItem",
+    "RelativePath": "api/Cart/RemoveCartItem",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RemoveCartItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CartController",
+    "Method": "UpdateCartItem",
+    "RelativePath": "api/Cart/UpdateCartItem",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UpdateCartItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.CategoriesController",
+    "Method": "Kategoriler",
+    "RelativePath": "api/kategoriler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "InallarEticaretWebService.Models.Result\u00601[[System.Collections.Generic.List\u00601[[InallarEticaretWebService.Models.Category, InallarEticaretWebService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.OdemeController",
+    "Method": "PosOdemeAsync",
+    "RelativePath": "api/Odeme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Sonuc.Islem_ID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sonuc.UCD_URL",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sonuc.Sonuc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sonuc.Sonuc_Str",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sonuc.Banka_Sonuc_Kod",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sonuc.Siparis_ID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sonuc.Komisyon_Oran",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "G.CLIENT_CODE",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "G.CLIENT_USERNAME",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "G.CLIENT_PASSWORD",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GUID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KK_Sahibi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KK_No",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KK_SK_Ay",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KK_SK_Yil",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KK_CVC",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "KK_Sahibi_GSM",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Hata_URL",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Basarili_URL",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Siparis_ID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Siparis_Aciklama",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Taksit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Islem_Tutar",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Toplam_Tutar",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Islem_Hash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Islem_Guvenlik_Tip",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Islem_ID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IPAdr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Ref_URL",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Data10",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.OdemeController",
+    "Method": "ModelOnayla",
+    "RelativePath": "api/Odeme/ModelOnayla",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "md",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "mdStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "orderId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "transactionAmount",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "islemGUID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "islemHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "bankResult",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dc",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dcUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.OdemeController",
+    "Method": "TPWMDUCDAsync",
+    "RelativePath": "api/Odeme/odeme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "InallarEticaretWebService.Dtos.TP_WMD_UCD.TP_WMD_UCDRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.OdemeController",
+    "Method": "TPWMDPayAsync",
+    "RelativePath": "api/Odeme/TPWMDPay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "InallarEticaretWebService.Dtos.TP_WMD_PayRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductController",
+    "Method": "GetProducts",
+    "RelativePath": "api/Product/allProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "akuAh",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ccaEn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "kutuTabanSekli",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "kutupBasi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "kutuTipi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "kutupBasiYerlesimDuzeni",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductController",
+    "Method": "DeleteImage",
+    "RelativePath": "api/Product/delete-image",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imagePath",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductController",
+    "Method": "GetProduct",
+    "RelativePath": "api/Product/product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemRef",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductController",
+    "Method": "SearchProducts",
+    "RelativePath": "api/Product/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductController",
+    "Method": "UploadImages",
+    "RelativePath": "api/Product/upload-images",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "urunId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "api/users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginModel",
+        "Type": "InallarEticaretWebService.Models.Users.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.UsersController",
+    "Method": "Register",
+    "RelativePath": "api/users/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "InallarEticaretWebService.Models.Users.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.UsersController",
+    "Method": "SifreGuncelle",
+    "RelativePath": "api/users/SifreGuncelle",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "newPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InallarEticaretWebService.Controllers.UsersController",
+    "Method": "SifremiUnuttum",
+    "RelativePath": "api/users/SifremiUnuttum",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "InallarEticaretWebService.Controllers.UsersController\u002BReturnObject",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
