@@ -169,13 +169,12 @@ artifacts/
 *- [Bb]ackup ([0-9][0-9]).rdl
 
 # Environment files
-*.env
-appsettings.Development.json
-appsettings.Production.json
-appsettings.Staging.json
+appsettings.*.json
+!appsettings.json
 
 # wwwroot directory (if using client-side libraries)
 wwwroot/lib/
+wwwroot/productImages/
 
 # Node.js (if using npm for client-side dependencies)
 node_modules/
